@@ -1,10 +1,6 @@
 package web.config;
 
 
-
-
-
-
 import org.jspecify.annotations.Nullable;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
