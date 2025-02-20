@@ -10,17 +10,17 @@
 <br>
 <br>
 
-<form  method="POST" action="/">
+<form th:action="@{/}" th:object="${user}" method="POST">
     <label for="name">Name</label>
-    <input name="name" type="text" id="name" >
+    <input type="text" id="name" th:field="*{name}" required>
     </br>
     <label for="last_name">Last_name</label>
-    <input name="last_name" type="text" id="last_name" >
+    <input type="text" id="last_name" th:field="*{last_name}" required>
     </br>
     <label for="email">Email</label>
-    <input name="email" type="text" id="email" >
+    <input type="text" id="email" th:field="*{email}" required>
     </br>
-    <input type="submit" value="Save user"/>
+    <button type="submit">Save user</button>
 </form>
 
 </body>
