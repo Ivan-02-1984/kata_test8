@@ -11,7 +11,7 @@
 <br>
 
 <form th:action="@{/editUser}" th:object="${user}" th:method="POST">
-    <input name="id" th:value="${user.id}" hidden="hidden">
+    <input name="id" th:value="${user.id}" type="hidden">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" th:value="${user.name}" required>
     <br>
